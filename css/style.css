@@ -1,4 +1,9 @@
 /* Decktop firt  */
+:root {
+  --footer-height: 100px;
+  --header-height: 100px
+}
+
 /* Reset  */
 * {
   margin: 0;
@@ -27,7 +32,7 @@ main {
 
 .left {
   width: 30%;
-  
+  overflow-y: auto;
   /* debug */
   height: 100%;
   background-color: lightcoral;
@@ -42,3 +47,48 @@ main {
 }
 
 /* #Utilities  */
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+/* Main  */
+
+/* Left  */
+/* Header  */
+.header-contacts,
+.header-messages {
+  height: 100px;
+  /* debug */
+  background-color: coral;
+  border: 1px solid black;
+}
+
+.notifications {
+  height: var(--header-height);
+
+  /* debug */
+  background-color: aqua;
+}
+
+.input-search-chat {
+
+  /* debug */
+  height: 50px;
+  background-color: grey;
+}
+
+/* Right  */
+.main-chat {
+  overflow-y: auto;
+  height: calc(100% - (var(--header-height) + var(--footer-height)));
+}
+/* Footer  */
+footer {
+  /* debug */
+  height: var(--footer-height);
+  background-color: blueviolet;
+}
