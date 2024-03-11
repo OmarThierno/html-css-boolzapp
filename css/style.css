@@ -30,16 +30,13 @@ main {
   height: 100%;
   margin: 0 auto;
   display: flex;
-  /* debug */
-  background-color: brown;
 }
 
 .left {
   width: 30%;
-  overflow-y: auto;
   /* debug */
   height: 100%;
-  background-color: lightcoral;
+  background-color: white;
 }
 
 .right {
@@ -55,8 +52,28 @@ main {
   display: flex;
 }
 
+.justyfi-cont-c {
+  justify-content: center;
+}
+
 .space-between {
   justify-content: space-between;
+}
+
+.align-items-c {
+  align-items: center;
+}
+
+.gap-20px {
+  gap: 20px;
+}
+
+.text-dec-und {
+  text-decoration: underline;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .profile-img {
@@ -72,14 +89,12 @@ main {
 /* Header  */
 .header-contacts,
 .header-messages {
-  height: 100px;
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  /* debug */
   background-color: #EAEAEA;
-  border: 1px solid black;
 }
 
 .header-contacts .icons-header > i,
@@ -91,17 +106,74 @@ main {
 
 .notifications {
   height: var(--header-height);
+  padding: 0 20px;
+  background-color: #8EDAFC;
+}
 
-  /* debug */
-  background-color: aqua;
+.bell-slash {
+  font-size: 2.5rem;
+  background-color: white;
+  color: #8EDAFC;
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  line-height: 70px;
+  text-align: center;
+}
+
+.notifications .text-notification {
+  font-size: 1.3rem;
+}
+
+.notifications .text-notification + span {
+  color: #6393A6;
 }
 
 .input-search-chat {
-
-  /* debug */
-  height: 50px;
-  background-color: grey;
+  background-color: #FAFAFA;
+  padding: 10px;
 }
+
+.input-search-chat > i {
+  font-size: 1.5rem;
+  color: #B1B1B1;
+  background-color: white;
+  padding: 7px;
+}
+
+.input-search-chat > input {
+  flex-grow: 1;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  margin-left: -1px;
+}
+
+#chats {
+  overflow-y: auto;
+  height: calc(100% - 300px);
+}
+
+.col {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid #C2C0BF;
+}
+
+.info-profile time {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #C2C0BF;
+}
+
+#chats .info-profile span {
+  color: #C2C0BF;
+}
+
+
 
 /* Right  */
 .main-chat {
@@ -111,7 +183,15 @@ main {
 
 .user-description.flex {
   align-items: center;
-  gap: 20px;
+}
+
+.userid-name {
+  font-size: 2rem;
+}
+
+.header-messages .userid-name + time {
+  font-size: 1.2rem;
+  color: #B1B1B1;
 }
 
 /* Footer  */

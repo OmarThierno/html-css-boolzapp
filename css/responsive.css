@@ -1,4 +1,5 @@
 @media screen and (max-width: 991px) {
+  /* Layout  */
   main {
     padding: 0;
   }
@@ -8,10 +9,23 @@
     height: 100%;
   }
 
+  /* Left  */
   .left {
     width: 10%;
   }
 
+  .header-contacts .icons-header,
+  section.notifications,
+  .input-search-chat,
+  .info-profile {
+    display: none;
+  }
+
+  .col {
+    flex-grow: 1;
+  }
+
+  /* Right  */
   .right {
     width: 90%;
   }
