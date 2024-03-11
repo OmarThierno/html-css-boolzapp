@@ -22,7 +22,13 @@ main {
   height: 100vh;
   padding: 50px 0 30px;
   /* debug */
-  background-color: aquamarine;
+  background: linear-gradient(
+    to bottom,
+    #009688 0%,
+    #009688 15%,
+    #D9DBD5 15%,
+    #D9DBD5 100%
+  );
 }
 
 .container {
@@ -34,17 +40,10 @@ main {
 
 .left {
   width: 30%;
-  /* debug */
-  height: 100%;
-  background-color: white;
 }
 
 .right {
   width: 70%;
-  
-  /* debug */
-  height: 100%;
-  background-color: rgb(175, 132, 22);
 }
 
 /* #Utilities  */
@@ -56,6 +55,10 @@ main {
   justify-content: center;
 }
 
+.justyfi-con-e {
+  justify-content: end;
+}
+
 .space-between {
   justify-content: space-between;
 }
@@ -63,6 +66,8 @@ main {
 .align-items-c {
   align-items: center;
 }
+
+
 
 .gap-20px {
   gap: 20px;
@@ -82,6 +87,22 @@ main {
   object-fit: cover;
   border-radius: 50%;
 }
+
+.message {
+  max-width: 600px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.message-sent {
+  background-color: #D5F9BA;
+}
+
+.message-received {
+  background-color: #FFFFFF;
+}
+
+
 
 /* Main  */
 
@@ -152,7 +173,7 @@ main {
 
 #chats {
   overflow-y: auto;
-  height: calc(100% - 300px);
+  height: calc(100% - 259px);
 }
 
 .col {
@@ -176,11 +197,6 @@ main {
 
 
 /* Right  */
-.main-chat {
-  overflow-y: auto;
-  height: calc(100% - (var(--header-height) + var(--footer-height)));
-}
-
 .user-description.flex {
   align-items: center;
 }
@@ -194,9 +210,40 @@ main {
   color: #B1B1B1;
 }
 
+.main-chat {
+  overflow-y: auto;
+  height: calc(100% - (var(--header-height) + var(--footer-height)));
+  background-image: url(../img/mine.jpg);
+  padding: 40px 60px;
+}
+
+
 /* Footer  */
 footer {
   /* debug */
   height: var(--footer-height);
-  background-color: blueviolet;
+  background-color: #F3EEEA;
+  padding: 0 20px;
+}
+
+form {
+  height: 100%;
+  gap: 40px;
+}
+
+footer form button {
+  background-color: transparent;
+  border: none;
+}
+
+footer form i {
+  font-size: 2.5rem;
+  color: #B1B1B1;
+}
+
+footer form input {
+  flex-grow: 1;
+  font-size: 1.5rem;
+  padding: 15px;
+  border: none;
 }

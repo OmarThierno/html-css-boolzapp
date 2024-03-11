@@ -17,17 +17,23 @@
   .header-contacts .icons-header,
   section.notifications,
   .input-search-chat,
-  .info-profile {
+  .info-profile, 
+  footer form button,
+  .footer-microphone {
     display: none;
   }
 
-  .col {
-    flex-grow: 1;
+  #chats {
+    height: 100%;
   }
 
   /* Right  */
   .right {
     width: 90%;
+  }
+
+  .message {
+    max-width: 500px;
   }
 }
 
@@ -38,5 +44,15 @@
 
   .right {
     width: 100%;
+  }
+
+  .message {
+    max-width: 400px;
+  }
+}
+  
+  footer form i {
+    font-size: 2.5rem;
+    color: #B1B1B1;
   }
 }
