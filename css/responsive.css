@@ -16,3 +16,13 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .left {
+    width: 0;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
