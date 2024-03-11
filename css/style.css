@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Common  */
 /* Layout */
 main {
@@ -55,6 +59,13 @@ main {
   justify-content: space-between;
 }
 
+.profile-img {
+  width: 65px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 /* Main  */
 
 /* Left  */
@@ -62,9 +73,20 @@ main {
 .header-contacts,
 .header-messages {
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   /* debug */
-  background-color: coral;
+  background-color: #EAEAEA;
   border: 1px solid black;
+}
+
+.header-contacts .icons-header > i,
+.header-messages .icons-header > i {
+  font-size: 2rem;
+  color: #B1B1B1;
+  margin-left: 20px;
 }
 
 .notifications {
@@ -86,6 +108,12 @@ main {
   overflow-y: auto;
   height: calc(100% - (var(--header-height) + var(--footer-height)));
 }
+
+.user-description.flex {
+  align-items: center;
+  gap: 20px;
+}
+
 /* Footer  */
 footer {
   /* debug */
