@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
   :root {
-    --left-col-widht: 80px;
+    --left-col-widht: 100px;
   }
 
   .footer-col button {
@@ -13,14 +13,18 @@
     --left-col-widht: 400px;
   }
 
-  .notification {
+  /* Left Col  */
+  /* Header  */
+  .left-col .icon-header {
+    display: flex;
+    align-items: center;
+  }
+  .notification,
+  .seach,
+  .chat-description  {
     display: block;
   }
-
-  .seach {
-    display: block;
-  }
-
+  
   /* Right Col  */
   .main-col .message p {
     max-width: 500px;

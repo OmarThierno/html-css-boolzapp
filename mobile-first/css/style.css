@@ -99,9 +99,25 @@ img {
   background-color: blueviolet;
 }
 
+/* Contats chat  */
 .contats-chat {
   flex-grow: 1;
   overflow-y: scroll;
+}
+
+.contats-chat div.chat {
+  position: relative;
+  padding: 20px;
+}
+
+.chat-description {
+  display: none;
+}
+
+.contats-chat .chat-description time {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 /* Right Col  */
@@ -133,6 +149,10 @@ img {
 .description-profile > time {
   font-size: 0.9rem;
   color: #D9DBD5;
+}
+
+.left-col .icon-header {
+  display: none;
 }
 
 .icon-header > i {
