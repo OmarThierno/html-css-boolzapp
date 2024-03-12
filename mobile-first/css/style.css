@@ -19,6 +19,10 @@ img {
 }
 
 /* Utilities  */
+.inline-block {
+  display: block;
+}
+
 /* flex */
 .flex {
   display: flex;
@@ -39,6 +43,12 @@ img {
 
 .gap-20px {
   gap: 20px;
+}
+
+/* Text  */
+.text-dec-und {
+  text-decoration: underline;
+  color: grey;
 }
 
 /* img  */
@@ -66,9 +76,6 @@ img {
 .app-container {
   width: 100%;
   height: 100%;
-
-  /* debug */
-  background-color: aquamarine;
 }
 
 /* Left Col  */
@@ -76,27 +83,53 @@ img {
   width: var(--left-col-widht);
   height: 100%;
   overflow: hidden;
-
-  /* debug */
-  background-color: brown;
 }
 
+/* Notification  */
 .notification {
   display: none;
   height: var(--notification);
   flex-shrink: 0;
-
-  /* debug */
-  background-color: chocolate;
+  background-color: #8EDAFC;
+  padding: 0 20px;
 }
 
+.notification i.inline-block {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #8EDAFC;
+}
+
+.notification .text-notification {
+  font-size: 1.2rem;
+}
+
+/* Seach  */
 .seach {
   display: none;
   height: var(--seach);
   flex-shrink: 0;
+  background-color: #FAFAFA;
+  padding: 10px;
+}
 
-  /* dedug */
-  background-color: blueviolet;
+.seach input {
+  flex-grow: 1;
+  padding: 14px;
+  background-color: white;
+  border: none;
+  margin-left: -1px;
+}
+
+.seach > i {
+  font-size: 1.5rem;
+  background-color: white;
+  padding: 10px;
 }
 
 /* Contats chat  */
@@ -106,12 +139,19 @@ img {
 }
 
 .contats-chat div.chat {
+  background-color: white;
   position: relative;
   padding: 20px;
+  border: 1px solid rgb(181, 181, 181);
 }
 
 .chat-description {
   display: none;
+}
+
+.contats-chat .chat-description span {
+  font-size: 0.9rem;
+  color: grey;
 }
 
 .contats-chat .chat-description time {
@@ -128,13 +168,11 @@ img {
 
 /* Header-Col */
 .header-col {
+  background-color: #EAEAEA;
   width: 100%;
   height: var(--header-height);
   flex-shrink: 0;
   padding: 0 20px;
-
-  /* debug */
-  background-color: red;
 }
 
 .info-profile,
@@ -148,7 +186,7 @@ img {
 
 .description-profile > time {
   font-size: 0.9rem;
-  color: #D9DBD5;
+  color: grey;
 }
 
 .left-col .icon-header {
@@ -162,6 +200,7 @@ img {
 
 /* Main-col  */
 .main-col {
+  background-image: url(../img/mine.jpg);
   flex-grow: 1;
   overflow-y: scroll;
   padding: 60px 40px;

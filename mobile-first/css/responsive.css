@@ -13,6 +13,18 @@
     --left-col-widht: 400px;
   }
 
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app-container {
+    width: 90%;
+    max-width: 1800px;
+    height: 90%;
+  }
+
   /* Left Col  */
   /* Header  */
   .left-col .icon-header {
@@ -24,7 +36,12 @@
   .chat-description  {
     display: block;
   }
-  
+
+  .notification,
+  .seach {
+    display: flex;
+  }
+
   /* Right Col  */
   .main-col .message p {
     max-width: 500px;
@@ -33,7 +50,7 @@
 
 @media screen and (min-width: 1444px) {
   /* Right Col  */
-  .main-col .message p {
-    max-width: 900px;
-  }
+  /* .main-col .message p {
+    max-width: 800px;
+  } */
 }
