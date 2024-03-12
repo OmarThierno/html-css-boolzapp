@@ -2,11 +2,15 @@
   :root {
     --left-col-widht: 80px;
   }
+
+  .footer-col button {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 992px) {
   :root {
-    --left-col-widht: 300px;
+    --left-col-widht: 400px;
   }
 
   .notification {
@@ -15,5 +19,17 @@
 
   .seach {
     display: block;
+  }
+
+  /* Right Col  */
+  .main-col .message p {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  /* Right Col  */
+  .main-col .message p {
+    max-width: 900px;
   }
 }
