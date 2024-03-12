@@ -15,7 +15,7 @@
 
   /* Left  */
   .left {
-    width: 10%;
+    width: var(--left-col-widht);
   }
 
   .header-contacts .icons-header,

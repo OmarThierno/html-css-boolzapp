@@ -224,8 +224,6 @@ img {
 
 .message-send {
   justify-content: end;
-  position: relative;
-  /* pointer-events: none; */
 }
 
 .message-send p {
@@ -248,11 +246,16 @@ img {
   padding: 10px;
 }
 
+
+.container-message {
+  position: relative;
+}
+
 .hover-message {
   opacity: 0;
 }
 
-.message-send .container-message:hover .hover-message {
+.container-message:hover .hover-message {
   opacity: 1;
 }
 
