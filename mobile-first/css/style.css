@@ -1,7 +1,10 @@
 /* Mobile firt  */
 :root {
+  --left-col-widht: 0px;
   --footer-height: 100px;
-  --header-height: 100px
+  --header-height: 100px;
+  --notification: 80px;
+  --seach: 60px;
 }
 
 /* Reset  */
@@ -13,6 +16,20 @@
 
 img {
   max-width: 100%;
+}
+
+/* Utilities  */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 /* Common  */
@@ -29,4 +46,70 @@ img {
   );
 }
 
-/* #Utilities  */
+.app-container {
+  width: 100%;
+  height: 100%;
+
+  /* debug */
+  background-color: aquamarine;
+}
+
+/* Left Col  */
+.left-col {
+  width: var(--left-col-widht);
+  height: 100%;
+  overflow: hidden;
+
+  /* debug */
+  background-color: brown;
+}
+
+.notification {
+  display: none;
+  height: var(--notification);
+  flex-shrink: 0;
+
+  /* debug */
+  background-color: chocolate;
+}
+
+.seach {
+  display: none;
+  height: var(--seach);
+  flex-shrink: 0;
+
+  /* dedug */
+  background-color: blueviolet;
+}
+
+.contats-chat {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+/* Right Col  */
+.right-col {
+  width: calc(100% - (var(--left-col-widht)));
+  height: 100%;
+}
+
+.header-col {
+  width: 100%;
+  height: var(--header-height);
+  flex-shrink: 0;
+
+  /* debug */
+  background-color: red;
+}
+
+.main-col {
+  flex-grow: 1;
+}
+
+.footer-col {
+  height: var(--footer-height);
+  flex-shrink: 0;
+
+  /* debug */
+  background-color: blue;
+}
