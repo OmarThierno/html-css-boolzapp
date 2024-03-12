@@ -1,4 +1,4 @@
-/* Decktop firt  */
+/* Decktop first  */
 :root {
   --footer-height: 100px;
   --header-height: 100px
@@ -22,6 +22,7 @@ main {
   height: 100vh;
   padding: 50px 0 30px;
   /* debug */
+  /* background-image*/
   background: linear-gradient(
     to bottom,
     #009688 0%,
@@ -172,7 +173,7 @@ main {
 }
 
 #chats {
-  overflow-y: auto;
+  overflow-y: scroll;
   height: calc(100% - 259px);
 }
 
