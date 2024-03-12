@@ -143,6 +143,12 @@ img {
   position: relative;
   padding: 20px;
   border: 1px solid rgb(181, 181, 181);
+  transition: background-color 0.15s;
+}
+
+.contats-chat div.chat:hover {
+  background-color: rgb(207, 207, 207);
+  cursor: pointer;
 }
 
 .chat-description {
@@ -218,6 +224,8 @@ img {
 
 .message-send {
   justify-content: end;
+  position: relative;
+  /* pointer-events: none; */
 }
 
 .message-send p {
@@ -228,7 +236,25 @@ img {
   background-color: white;
 }
 
+.hover-message {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+}
 
+
+.hover-message .inline-block {
+  padding: 10px;
+}
+
+.hover-message {
+  opacity: 0;
+}
+
+.message-send .container-message:hover .hover-message {
+  opacity: 1;
+}
 
 /* Footer-col  */
 .footer-col {

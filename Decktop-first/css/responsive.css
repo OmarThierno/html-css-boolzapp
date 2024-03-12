@@ -1,4 +1,8 @@
 @media screen and (max-width: 991px) {
+  :root {
+    --left-col-widht: 100px;
+  }
+
   /* Layout  */
   main {
     padding: 0;
